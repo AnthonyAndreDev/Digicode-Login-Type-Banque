@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire d'authentification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1 class="title">Authentification</h1>
+
+  <div id="messAuth"></div>
+
+  <div id="auth"></div>
+
+  <section class="container">
+
+    <div class="panneauGauche">
+
+      <form id="formElem" action="https://www.ericfreelance.fr/api/check_user.php/?login=eric%40free.fr&password=123456" method="post">
+
+        <label for="identifiant">Identifiant</label>
+        <input type="mail" name="login" id="identifiant" placeholder="Saisissez votre identifiant">
+
+        <label for="mdp">Mot de Passe</label>
+        <input type="password" name="password" id="mdp" placeholder="Composer votre mot de passe" readonly minlength="6">
+
+        <div class="grilleCode">
+
+          <button type="button" class="boutonCode" value="0" onclick="saisieCode(this.value)">0</button>
+          <button type="button" class="boutonCode" value="1" onclick="saisieCode(this.value)">1</button>
+          <button type="button" class="boutonCode" value="2" onclick="saisieCode(this.value)">2</button>
+          <button type="button" class="boutonCode" value="3" onclick="saisieCode(this.value)">3</button>
+          <button type="button" class="boutonCode" value="4" onclick="saisieCode(this.value)">4</button>
+          <button type="button" class="boutonCode" value="5" onclick="saisieCode(this.value)">5</button>
+          <button type="button" class="boutonCode" value="6" onclick="saisieCode(this.value)">6</button> 
+          <button type="button" class="boutonCode" value="7" onclick="saisieCode(this.value)">7</button>
+          <button type="button" class="boutonCode" value="8" onclick="saisieCode(this.value)">8</button>
+          <button type="button" class="boutonCode" value="9" onclick="saisieCode(this.value)">9</button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+          <button type="button" class="boutonCode" value="" onclick="saisieCode(this.value)"></button>
+
+
+        </div>
+
+        <button type="submit" id="envoyer">Valider</button>
+        <button type="button" id="effacer" onclick="effacement()">Effacer</button>
+
+
+
+      </form>
+
+
+
+
+    </div>
+
+    <div class="panneauDroit">
+
+      <a href="#" id="aide"><i class="far fa-question-circle"></i> Aide à la connexion</a>
+      <a href="#" id="idMdpPerdu"><i class="fas fa-sign-out-alt"></i> Identifiant / Mot de passe perdu</a>
+      <a href="#" id="securiteIdMdp"><i class="fas fa-lock"></i> Sécurité Identifiant / Mot de passe</a>
+
+      <p id="messageImportant"><span>Important : </span>votre vigilance est primordiale pour assurer la sécurité de votre
+        compte.</p>
+
+    </div>
+
+
+
+  </section>
+
+
+  <script src="https://kit.fontawesome.com/fc9152c65b.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>

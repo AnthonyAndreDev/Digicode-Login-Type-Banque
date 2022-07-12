@@ -1,0 +1,150 @@
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: sans-serif;
+  background: rgb(234,234,234);
+}
+
+h1{
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  font-weight: 500;
+}
+
+#messAuth{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  width: 800px;
+  height: 50px;
+  background: rgb(255,243,205);
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+  color: #9F6000;
+  display: none;
+}
+
+.container{
+  height: 600px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  background: #fff;
+}
+
+/* Panneau gauche : */ 
+
+.panneauGauche{
+  padding: 15px;
+  width: 60%;
+}
+
+.container input, .container label{
+  display: block;
+  margin: 10px;
+}
+
+.container label{
+  padding-left: 3px;
+}
+
+.container input{
+  height: 40px;
+  padding: 5px;
+  width: 85%;
+  border: rgb(243,244,246) solid 0.5px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+
+.container input:focus{
+   background: rgb(233,236,239);
+}
+
+#mdp{
+  background: rgb(233,236,239);
+}
+
+/* Grille code : */
+
+.grilleCode{
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  column-gap: 5px;
+  row-gap: 5px;
+  margin: 30px 0 30px 60px;
+  width: 60%;
+}
+
+.boutonCode{
+  width: 90%;
+  height: 55px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.boutonCode{
+  text-decoration: none;
+  color: black;
+  background: rgb(204,204,204);
+}
+
+
+button{
+  width: 75px;
+  background: rgb(0,123,255);
+  color: #fff;
+  padding: 10px 0;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+#envoyer{
+  margin-left: 10px;
+}
+
+/* Panneau droit : */ 
+
+.panneauDroit{
+  padding: 10px 20px 10px 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panneauDroit a{
+  text-decoration: none;
+  color: rgb(0,123,255);
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.panneauDroit p{
+  line-height: 1.4;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 15px;
+  background: rgb(226,227,229);
+}
+
+.panneauDroit p span{
+  font-weight: 600;
+}
+
